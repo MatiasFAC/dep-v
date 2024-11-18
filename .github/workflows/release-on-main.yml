@@ -17,8 +17,6 @@ jobs:
       # 2. Cargar las variables desde Secrets and variables
       - name: Set environment variables
         run: |
-          echo "V_MAJOR=${{ env.V_MAJOR }}" >> $GITHUB_ENV
-          echo "V_MINOR=${{ env.V_MINOR }}" >> $GITHUB_ENV
           echo $V_MAJOR
           echo $V_MINOR
 
