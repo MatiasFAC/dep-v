@@ -19,7 +19,7 @@ jobs:
       # 2. Cargar las variables desde Secrets and variables
       - name: Set environment variables
         run: |
-          echo "${{ vars.env.V_MAJOR }}"
+          echo "${{ vars.V_MAJOR }}"
           echo $V_MINOR
 
       # 3. Crear un archivo ZIP con el contenido del proyecto
