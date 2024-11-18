@@ -8,10 +8,11 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    environment: env
 
     steps:
       - name: test
-        run: echo "${{ github.event_name }}"
+        run: echo "This is a ${{ vars.V_MAJOR}} ${{ vars.V_MINOR}}"
 
       # 1. Clonar el repositorio
       - name: Check out the code
